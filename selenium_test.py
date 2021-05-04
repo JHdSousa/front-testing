@@ -26,11 +26,11 @@ class LoginPageTest(unittest.TestCase):
         username = driver.find_element_by_id('username')
         login = driver.find_element_by_name('submit')
   
-        # send data
+        # send data --> fills in the username and password boxes on the login page
         username.send_keys("username")
         password.send_keys("password")
         
-        login.click()
+        login.click() # clicks the submit button on the page
 
         # recieve data
         #elem.send_keys(Keys.RETURN)
